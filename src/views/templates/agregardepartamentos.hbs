@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            AGREGAR DATOS DEL DEPARTAMENTO
+        </div>
+        <div class="card-body">
+
+            <form action="/departamentos/agregar" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" name="departamento" id="departamento" value="">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion:</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion" value="">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-sm btn-primary">Guardar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

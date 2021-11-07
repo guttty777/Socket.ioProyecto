@@ -1,0 +1,31 @@
+<div class="mt-5 py-5 px-5">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Empleados</th>
+                <th scope="col">Departamentos</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each empleados}}
+            <tr>
+                <th scope="row">{{this.id}}</th>
+                <td>{{this.nombre}}</td>
+                <td>{{this.departamento}}</td>
+                <td>{{this.correo}}</td>
+                <td>{{this.edad}}</td>
+                <td>
+                    <a href="/empleados/editar/{{this.id}}" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="/empleados/eliminar/{{this.id}}" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <a href="/empleados/agregar" class="btn btn-sm btn-primary">Agregar</a>
+</div>
